@@ -1,0 +1,24 @@
+﻿@model List<C_4_Lab01.Models.Book>
+
+<h2>Danh sách sách</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Language</th>
+            <th>Edition</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Language</td>
+                <td>@book.Edition</td>
+                <td>@book.Author</td>
+            </tr>
+        }
+    </tbody>
+</table>
