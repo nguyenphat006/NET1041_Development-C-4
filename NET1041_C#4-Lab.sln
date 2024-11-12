@@ -5,9 +5,9 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#4_Lab02-Bai01", "C#4_Lab01\C#4_Lab02-Bai01.csproj", "{9F34507F-E1E9-460E-BDE7-FEF66A1A48AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai02", "Lab02-Bai02-Bai03\Bai02.csproj", "{41BAB013-8BD1-4D7C-B8A7-0B70807085D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bai02", "Lab02-Bai02-Bai03\Bai02.csproj", "{41BAB013-8BD1-4D7C-B8A7-0B70807085D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai03", "Bai03\Bai03.csproj", "{43246A1E-F0A2-433B-99C8-4843410A4A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bai03", "Bai03\Bai03.csproj", "{43246A1E-F0A2-433B-99C8-4843410A4A54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
