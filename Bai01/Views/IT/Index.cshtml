@@ -1,0 +1,47 @@
+﻿@model List<Bai01.Models.IT>
+
+<h2 style="text-align: center; margin-bottom: 50px;">Ngành nghề công nghệ thông tin</h2>
+<div class="it-list">
+    @foreach (var it in Model)
+    {
+        <div class="it-item">
+            <img src="@Url.Content(it.image)" alt="@it.Name" class="it-image" />
+            <h3 class="it-title">@it.title</h3>
+        </div>
+    }
+</div>
+
+<style>
+    /* Đặt kiểu cho danh sách */
+    .it-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Khoảng cách giữa các mục */
+        justify-content: center;
+    }
+
+    /* Kiểu cho từng mục IT */
+    .it-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 200px; /* Độ rộng cho mỗi mục */
+    }
+
+    /* Kiểu cho ảnh */
+    .it-image {
+        width: 100%; /* Kích thước ảnh */
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px; /* Bo tròn góc ảnh nếu muốn */
+        margin-bottom: 10px; /* Khoảng cách dưới ảnh */
+    }
+
+    /* Kiểu cho tiêu đề */
+    .it-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+</style>

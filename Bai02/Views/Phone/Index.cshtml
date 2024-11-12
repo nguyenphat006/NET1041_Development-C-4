@@ -1,0 +1,67 @@
+﻿@model List<Bai02.Models.PhoneModel>
+
+<h2 style="text-align: center; margin: 50px 0;">Danh sách Điện Thoại</h2>
+<div class="phone-list">
+    @foreach (var phone in Model)
+    {
+        <div class="phone-item">
+            <img src="@Url.Content(phone.image)" alt="@phone.Name" class="phone-image" />
+            <h3 class="phone-title">@phone.Title</h3>
+            <p class="phone-price">Giá: @String.Format("{0:N0}", phone.salePrice) VNĐ</p>
+            <p>
+                <span class="star">★★★★★</span>
+                (@phone.Rate đánh giá)
+            </p>
+            <p><strong>Màn hình:</strong> @phone.screen</p>
+            <p><strong>Camera:</strong> @phone.camera</p>
+            <p><strong>Pin:</strong> @phone.pin</p>
+            <p><strong>RAM:</strong> @phone.ram</p>
+            <p><strong>CPU:</strong> @phone.cpu</p>
+            <p><strong>Hệ điều hành:</strong> @phone.hdh</p>
+        </div>
+    }
+</div>
+
+<style>
+    .phone-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Khoảng cách giữa các mục */
+        justify-content: center;
+    }
+
+    .phone-item {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        width: 290px;
+        text-align: center;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .phone-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .phone-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .phone-price {
+        font-size: 1.1em;
+        color: #e74c3c;
+        margin-top: 5px;
+    }
+
+    .star {
+        color: #ff7c00;
+        font-size: 1.2em;
+    }
+</style>
+
